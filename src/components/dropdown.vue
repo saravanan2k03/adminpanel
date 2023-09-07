@@ -1,5 +1,5 @@
 <template>
-    <div class="hs-dropdown relative  inline-flex mt-2 ">
+    <div class="hs-dropdown   inline-flex mt-2 ">
         <button id="hs-dropdown-basic" type="button"
             class="hs-dropdown-toggle py-3 px-4 w-[650px] inline-flex justify-between items-center gap-2  border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
             Select Category
