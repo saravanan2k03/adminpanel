@@ -10,6 +10,9 @@
     <OutComes index="2"></OutComes>
     <OutComes index="3"></OutComes>
     <OutComes index="4"></OutComes>
+    <div class="  min-w-[51%] max-w-[51%] flex justify-end">
+    <p class="text-3lg text-black font-semibold mt-2">Add another</p>
+    </div>
 </template>
 
 

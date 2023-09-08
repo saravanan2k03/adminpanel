@@ -19,6 +19,7 @@
             <div class="h-[2px] w-full border-b-2 border-black"></div>
             <p class="text-2xl text-black font-bold mt-4">Course Outcome</p>
             <Courseoutcome></Courseoutcome>
+            <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
         </div>
     </div>
 </template>
