@@ -2,7 +2,7 @@
     <p class="text-3lg text-black font-semibold mt-4">Course Category</p>
     <dropdown></dropdown>
     <p class="text-3lg text-black font-bold mt-4">Course header</p>
-    <div class="min-h-[12%] max-h-[12%] min-w-[52%] max-w-[52%] mt-2 flex">
+    <div class=" min-w-[52%] max-w-[52%] mt-2 flex">
         <div class="h-full min-w-[50%] flex flex-col">
             <p class="text-3lg text-black font-semibold mt-2">
                 Grey course title
@@ -20,7 +20,7 @@
                 placeholder="enter title" />
         </div>
     </div>
-    <div class="min-h-[12%] max-h-[12%] min-w-[55%] max-w-[55%] flex">
+    <div class=" min-w-[55%] max-w-[55%] flex">
         <div class="h-full min-w-[33%] flex flex-col p-1">
             <p class="text-3lg text-black font-semibold mt-2">Format</p>
             <input type="text"
@@ -40,7 +40,7 @@
                 placeholder="enter duration" />
         </div>
     </div>
-    <div class="min-h-[12%] max-h-[12%] min-w-[53%] max-w-[52%] flex mt-4">
+    <div class=" min-w-[53%] max-w-[52%] flex mt-3">
         <div class="h-full min-w-[100%] flex flex-col">
             <p class="text-3lg text-black font-bold mt-2">Upload Syllabus</p>
             <form class="mt-3 border-2 border-gray-300">
@@ -50,7 +50,7 @@
             </form>
         </div>
     </div>
-    <div class="min-h-[12%] max-h-[12%] min-w-[53%] max-w-[52%] flex mt-4">
+    <div class=" min-w-[53%] max-w-[52%] flex mt-3">
         <div class="h-full min-w-[100%] flex flex-col">
             <p class="text-3lg text-black font-bold mt-2">Upload Thumbnail Image</p>
             <form class="mt-3 border-2 border-gray-300">
@@ -60,7 +60,7 @@
             </form>
         </div>
     </div>
-    <div class="min-h-[30%] max-h-[30%] min-w-[53%] max-w-[52%] flex mt-3">
+    <div class=" min-w-[53%] max-w-[52%] flex mt-3">
         <div class="h-full min-w-[100%] flex flex-col">
             <p class="text-3lg text-black font-bold mt-2">Description after thumbnail</p>
             <textarea id="message" rows="4"

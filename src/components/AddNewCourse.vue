@@ -16,10 +16,17 @@
         </div>
         <div class="flex flex-col ml-3 items-start">
             <CoureseData></CoureseData>
-            <div class="h-[2px] w-full border-b-2 border-black"></div>
+            <div class="h-[2px] w-full border-b-2 border-black mt-4"></div>
             <p class="text-2xl text-black font-bold mt-4">Course Outcome</p>
             <Courseoutcome></Courseoutcome>
             <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
+            <p class="text-2xl text-black font-bold mt-4">what you will learn</p>
+            <wywl></wywl>
+            <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
+            <p class="text-2xl text-black font-bold mt-4">FAQ</p>
+            <Faq></Faq>
+            <div class="h-[10px] w-full mt-2"></div>
+
         </div>
     </div>
 </template>
@@ -28,12 +35,16 @@
 import dropdown from "../components/dropdown.vue";
 import CoureseData from '../components/CourseData.vue'
 import Courseoutcome from '../components/CourseOutcomeData.vue'
+import wywl from '../components/WhatYouWillLearn.vue'
+import Faq from '../components/Faq.vue'
 export default {
     name: "AddNewCourse",
     components: {
         dropdown,
         CoureseData,
         Courseoutcome,
+        wywl,
+        Faq,
     },
 };
 </script>
