@@ -6,14 +6,21 @@
             placeholder="enter short description" />
     </div>
     <p class="text-3lg text-black font-semibold mt-3">Outcomes</p>
-
+    <OutComes index="1"></OutComes>
+    <OutComes index="2"></OutComes>
+    <OutComes index="3"></OutComes>
+    <OutComes index="4"></OutComes>
 </template>
 
 
 
 <script>
+import OutComes from "../components/OutComes.vue"
 export default {
     name: "Courseoutcome",
+    components:{
+        OutComes,
+    }
 
 };
 </script>
