@@ -6,6 +6,8 @@ import CourseCateView from '../views/CourseCateView.vue'
 import ProgramCateView from '../views/ProgramCateView.vue'
 import AddNewPageView from '../views/AddNewView.vue'
 import AddNewProgramsPage from '../views/AddNewProgramsView.vue'
+import AddNewCourseCategory from '../views/AddNewCourseCateView.vue'
+import AddNewProgramCategory from '../views/AddNewProgramsCateView.vue'
 
 const routes = [
   {
@@ -45,7 +47,18 @@ const routes = [
     name: 'AddNewProgramsPage',
     component: AddNewProgramsPage
   },
+   
+  {
+    path: '/AddNewCourseCategory',
+    name: 'AddNewCourseCategory',
+    component: AddNewCourseCategory
+  },
 
+  {
+    path: '/AddNewProgramCategory',
+    name: 'AddNewProgramCategory',
+    component: AddNewProgramCategory
+  },  
   {
     path: '/about',
     name: 'about',

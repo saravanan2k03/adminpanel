@@ -18,9 +18,13 @@
             <ProgramData></ProgramData>
             <div class="h-[2px] w-full border-b-2 border-black mt-4"></div>
             <p class="text-2xl text-black font-bold mt-4">Program Outcome</p>
-            <Courseoutcome></Courseoutcome>
+            <Programoutcome></Programoutcome>
             <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
             <p class="text-2xl text-black font-bold mt-4">How This Program Works</p>
+            <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
+            <p class="text-2xl text-black font-bold mt-4">FAQ</p>
+            <ProgramFaq></ProgramFaq>
+            <div class="h-[10px] w-full mt-2"></div>
         </div>
     </div>
 </template>
@@ -28,13 +32,15 @@
 <script>
 import dropdown from "../components/dropdown.vue";
 import ProgramData from "../components/ProgramData.vue"
-import Courseoutcome from '../components/CourseOutcomeData.vue'
+import Programoutcome from "../components/ProgramOutcomeData.vue"
+import ProgramFaq from "../components/ProgramFaq.vue"
 export default {
     name: "AddNewprogram",
     components: {
         dropdown,
         ProgramData,
-        Courseoutcome,
+        Programoutcome,
+        ProgramFaq,
     },
 };
 </script>

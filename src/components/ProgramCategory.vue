@@ -4,7 +4,7 @@
         <div class="flex items-stretch justify-between  min-h-[12%] p-3 border-b-2 border-gray-300 items-center">
             <p class="text-2xl text-black font-semibold mt-4 ">Program category</p>
             <div class="min-h-[7%] mt-3">
-                <router-link to="/AddNewPages"> <button type="button"
+                <router-link to="/AddNewProgramCategory"> <button type="button"
                         class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm dark:focus:ring-gray-900 dark:focus:ring-offset-gray-800">
                         Add new
                     </button></router-link>
