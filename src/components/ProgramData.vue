@@ -20,7 +20,7 @@
                 placeholder="enter title" />
         </div>
     </div>
-    <div class=" min-w-[55%] max-w-[55%] flex">
+    <div class=" min-w-[55%] max-w-[55%] flex ">
         <div class="h-full min-w-[33%] flex flex-col p-1">
             <p class="text-3lg text-black font-semibold mt-2">Format</p>
             <input type="text"
