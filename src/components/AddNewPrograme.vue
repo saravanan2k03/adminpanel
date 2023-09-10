@@ -1,7 +1,7 @@
 <template>
     <div class="min-w-[15%]"></div>
     <div class="h-screen min-w-[85%] max-w-[85%] flex flex-col p-2">
-        <div class="flex items-stretch justify-between min-h-[11%] p-3 border-b-2 border-gray-300 items-center">
+        <div class="flex items-stretch justify-between min-h-[11%] p-3 border-b-2 border-gray-300 ">
             <p class="text-2xl text-black font-semibold mt-4">New Program</p>
             <div class="h-full min-w-[15%] max-w-[10%] flex">
                 <button type="button"
