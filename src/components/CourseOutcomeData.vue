@@ -6,12 +6,13 @@
             placeholder="enter short description" />
     </div>
     <p class="text-3lg text-black font-semibold mt-3">Outcomes</p>
-    <OutComes index="1"></OutComes>
-    <OutComes index="2"></OutComes>
-    <OutComes index="3"></OutComes>
-    <OutComes index="4"></OutComes>
-    <div class="  min-w-[51%] max-w-[51%] flex justify-end">
-    <p class="text-3lg text-black font-semibold mt-2">Add another</p>
+    <div class="min-w-[53%] max-w-[53%] flex">
+        <div class="w-full flex flex-col">
+            <OutComes v-for="(outcome, index) in outcomes" :key="index" :index="index" />
+        </div>
+    </div>
+    <div class="  min-w-[51%] max-w-[51%] flex justify-end mt-3">
+        <button class="text-3lg text-black font-semibold" @click="addOutcome">Add another</button>
     </div>
 </template>
 
@@ -21,9 +22,20 @@
 import OutComes from "../components/OutComes.vue"
 export default {
     name: "Courseoutcome",
-    components:{
+    components: {
         OutComes,
-    }
+    },
+    data() {
+        return {
+            outcomes: [""],
+        };
+    },
+    methods: {
+        addOutcome() {
+            this.outcomes.push("");
+        },
+    },
+
 
 };
 </script>
