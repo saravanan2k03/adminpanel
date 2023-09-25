@@ -22,7 +22,6 @@
             <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
             <p class="text-2xl text-black font-bold mt-4">How This Program Works</p>
             <HTPworks></HTPworks>
-            
             <div class="h-[2px] w-full border-b-2 border-black mt-2"></div>
             <p class="text-2xl text-black font-bold mt-4">FAQ</p>
             <ProgramFaq></ProgramFaq>
