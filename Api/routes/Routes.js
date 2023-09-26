@@ -1,12 +1,12 @@
 var router = require("express").Router();
-
+const {InsertCoursecategories, GetCoursecategoriesByCourseId,GetAllCoursecategories,UpdateCoursecategories,DeleteCoursecategories} = require("../controller/CourseCatecontroller")
 
 // getAllCourseCategories
-router.route("/api/v1/coursecategories").post(getAllCourseCategories);
-router.route("/api/v1/coursecategories/{{coursecategoryId}}").get(getAllCourseCategories);
-router.route("/api/v1/coursecategories").get(getAllCourseCategories);
-router.route("/api/v1/coursecategories").put(getAllCourseCategories);
-router.route("/api/v1/coursecategories").delete(getAllCourseCategories);
+router.route("/api/v1/coursecategories").post(InsertCoursecategories);
+router.route("/api/v1/coursecategories/{{coursecategoryId}}").get(GetCoursecategoriesByCourseId);
+router.route("/api/v1/coursecategories").get(GetAllCoursecategories);
+router.route("/api/v1/coursecategories").put(UpdateCoursecategories);
+router.route("/api/v1/coursecategories").delete(DeleteCoursecategories);
 
 
 //getAllProductCategories
