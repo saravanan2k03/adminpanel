@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-stretch justify-between items-end min-h-[9.2%] pt-3 border-b-2 border-gray-300">
+    <div class="flex justify-between items-end min-h-[9.2%] pt-3 border-b-2 border-gray-300">
         <div class="h-full min-w-[100%] flex items-center justify-between ">
             <p class="text-3lg text-gray-600 ml-4 font-medium min-w-[50%]">{{ CourseCategory }}</p>
             <div>
