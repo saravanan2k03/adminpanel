@@ -3,7 +3,8 @@ const {InsertCoursecategories, GetCoursecategoriesByCourseId,GetAllCoursecategor
 const {InsertProductcategories, GetProductcategoriesByProductId,GetAllProductcategories,UpdateProductcategories,DeleteProductcategories} = require("../controller/ProductCatecontroller");
 const {InsertCourses, GetCourseByCourseId,GetAllCourses,UpdateCourses,DeleteCourses} = require("../controller/Coursecontroller");
 const {InsertProduct, GetProductByProductId,GetAllProduct,UpdateProduct, DeleteProduct} = require("../controller/Productcontroller");
-// getAllCourseCategories
+
+//getAllCourseCategories
 router.route("/api/v1/coursecategories").post(InsertCoursecategories);
 router.route("/api/v1/coursecategories/{{coursecategoryId}}").get(GetCoursecategoriesByCourseId);
 router.route("/api/v1/coursecategories").get(GetAllCoursecategories);
