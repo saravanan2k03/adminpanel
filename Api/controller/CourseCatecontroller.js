@@ -110,7 +110,23 @@ const UpdateCoursecategories = async (req, res) => {
 };
 
 const DeleteCoursecategories = async (req, res) => {
-  res.status(200).json({ msg: "Deleting coursecategories" });
+  const courseId = req.body.courseId; 
+  const params = {
+    TableName: 'mentorfoxdev',
+    Key: {
+      pk: 'COURSE#' + courseId, 
+      sk: 'CATEGORY#' 
+    }
+  };
+  console.log(params);
+
+  try {
+    await dynamodb.delete(params).promise();
+    res.status(200).json({ msg: 'Course category deleted successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'An error occurred while deleting the course category' });
+  }
 };
 
 module.exports = {
