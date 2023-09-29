@@ -8,6 +8,10 @@ const InsertCoursecategories = async (req, res) => {
         CreatedDate: req.body.createddate,
         Status: req.body.status,
         Who:"vasu",
+        Details: {
+            key1: "value1",
+            key2: "value2",
+        }
     };
     console.log("DataGetted:");
     console.log(data);
