@@ -67,7 +67,7 @@ const GetAllCoursecategories = async(req,res)=>{
         TableName: 'mentorfoxdev',
         KeyConditionExpression: 'pk = :pk', // Query based on the partition key only
         ExpressionAttributeValues: {
-          ':pk': 'COURSE#' + courseId, // Adjust your pk value accordingly
+          ':pk': 'COURSE#7937', // Adjust your pk value accordingly
         }
       };
   
