@@ -6,7 +6,7 @@ const {InsertProduct, GetProductByProductId,GetAllProduct,UpdateProduct, DeleteP
 
 //getAllCourseCategories
 router.route("/api/v1/coursecategories").post(InsertCoursecategories);
-router.route("/api/v1/coursecategories/{{coursecategoryId}}").get(GetCoursecategoriesByCourseId);
+router.route("/api/v1/coursecategories/:courseId").get(GetCoursecategoriesByCourseId);
 router.route("/api/v1/coursecategories").get(GetAllCoursecategories);
 router.route("/api/v1/coursecategories").put(UpdateCoursecategories);
 router.route("/api/v1/coursecategories").delete(DeleteCoursecategories);
