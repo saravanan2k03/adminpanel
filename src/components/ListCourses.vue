@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-stretch justify-between items-end min-h-[9.2%] pt-3 border-b-2 border-gray-300">
+    <div class="flex items-stretch justify-between min-h-[9.2%] pt-3 border-b-2 border-gray-300">
         <div class="h-full min-w-[40%] flex items-center">
             <p class="text-3lg text-gray-600 ml-4 font-medium">{{ Name }}</p>
         </div>

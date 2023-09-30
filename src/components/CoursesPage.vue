@@ -15,7 +15,7 @@
                 <p class="text-3lg text-gray-600 ml-4 font-semibold">Name</p>
             </div>
             <div class="h-full min-w-[59%]  border-b-2 border-gray-300 flex items-center">
-                <p class="text-3lg text-gray-600 ml-4 font-semibold">Program Category</p>
+                <p class="text-3lg text-gray-600 ml-4 font-semibold">Course Category</p>
 
             </div>
 
