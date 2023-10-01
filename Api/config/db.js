@@ -4,7 +4,7 @@ const config ={
     apiVersion:'2023-09-26',
     region: "ap-south-1",
     accessKeyId:process.env.AWS_ACCESSKEYID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    secretAccessKey:process.env.AWS_SECRET_ACCESS_KEY,
     AWS_SDK_LOAD_CONFIG:1,
 };
 
