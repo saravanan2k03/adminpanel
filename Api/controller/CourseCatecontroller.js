@@ -1,4 +1,18 @@
 const {DynamoDB,AWSS3} = require("../config/db");
+const multer = require('multer');
+const multerS3 = require('multer-s3');
+
+const upload = multer({
+  storage: multerS3({
+      s3: AWSS3,
+      acl: "public-read",
+      bucket: process.env.AWS_BUCKET_NAME,
+      key: function (req, file, cb) {
+          console.log(file);
+          cb(null, file.originalname)
+      }
+  })
+});
 
 const InsertCoursecategories = async (req, res) => {
   let data = {
