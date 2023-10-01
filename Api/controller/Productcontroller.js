@@ -1,4 +1,5 @@
-const dynamodb = require('../config/db')
+const {DynamoDB,AWSS3} = require("../config/db");
+
 
 const InsertProduct = async(req,res)=>{
     res.status(200).json({msg:'Inserted Product'});

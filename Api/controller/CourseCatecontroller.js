@@ -1,4 +1,4 @@
-const dynamodb = require("../config/db");
+const {DynamoDB,AWSS3} = require("../config/db");
 
 const InsertCoursecategories = async (req, res) => {
   let data = {
@@ -20,7 +20,7 @@ const InsertCoursecategories = async (req, res) => {
     Item: data,
   };
 
-  dynamodb.put(params, (err) => {
+  DynamoDB.put(params, (err) => {
     if (err) {
       // Handle the error case
       console.error(err);
@@ -46,7 +46,7 @@ const GetCoursecategoriesByCourseId = async (req, res) => {
   };
    console.log(params);
   try {
-    const data = await dynamodb.query(params).promise();
+    const data = await DynamoDB.query(params).promise();
     console.log(params);
     if (data.Items && data.Items.length > 0) {
       res.status(200).json(data.Items);
@@ -69,7 +69,7 @@ const GetAllCoursecategories = async (req, res) => {
   };
 
   try {
-    const data = await dynamodb.query(params).promise();
+    const data = await DynamoDB.query(params).promise();
     console.log(params);
     if (data.Items && data.Items.length > 0) {
       res.status(200).json(data.Items);
@@ -99,7 +99,7 @@ const UpdateCoursecategories = async (req, res) => {
   };
   console.log(params);
   try {
-    const updatedItem = await dynamodb.update(params).promise();
+    const updatedItem = await DynamoDB.update(params).promise();
     res.status(200).json(updatedItem.Attributes); 
   } catch (error) {
     console.error(error);
@@ -121,7 +121,7 @@ const DeleteCoursecategories = async (req, res) => {
   console.log(params);
 
   try {
-    await dynamodb.delete(params).promise();
+    await DynamoDB.delete(params).promise();
     res.status(200).json({ msg: 'Course category deleted successfully' });
   } catch (error) {
     console.error(error);

@@ -2,7 +2,7 @@ const AWS = require('aws-sdk');
 require('dotenv').config();
 const config ={
     apiVersion:'2023-09-26',
-    region: "ap-south-1",
+    region:process.env.AWS_DEFAULT_REGION,
     accessKeyId:process.env.AWS_ACCESSKEYID,
     secretAccessKey:process.env.AWS_SECRET_ACCESS_KEY,
     AWS_SDK_LOAD_CONFIG:1,
@@ -19,5 +19,16 @@ const DynamoDBConnection = (config) =>{
     }
 };
 
+const AwsS3Connection =(config)=>{
+    try {
+        AWS.config.update(config);
+        const AwsS3Connection = new AWS.S3();
+        console.log('[INFO] connected To S3BUCKET');
+        return AwsS3Connection;
+    } catch (error) {
+        console.log('[ERROR] Error connecting to S3BUCKET', error);
+    }
+}
 const DynamoDB = DynamoDBConnection(config);
-module.exports = DynamoDB;
+const AWSS3 = AwsS3Connection(config);
+module.exports = {DynamoDB,AWSS3};
