@@ -1,17 +1,13 @@
 const AWS = require('aws-sdk');
-require('dotenv').config()
+require('dotenv').config();
 const config ={
     apiVersion:'2023-09-26',
     region: "ap-south-1",
-    accessKeyId: "AKIASVCJ4LO6QLYPZSTU",
-    secretAccessKey: "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",
+    accessKeyId:process.env.AWS_ACCESSKEYID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     AWS_SDK_LOAD_CONFIG:1,
 };
-// apiVersion:'2023-09-26',
-// region: "ap-south-1",
-// accessKeyId: "AKIASVCJ4LO6QLYPZSTU",
-// secretAccessKey: "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",
-// AWS_SDK_LOAD_CONFIG:1,
+
 const DynamoDBConnection = (config) =>{
     try {
         AWS.config.update(config);

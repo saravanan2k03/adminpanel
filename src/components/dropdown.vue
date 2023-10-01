@@ -28,7 +28,7 @@ export default {
     data() {
         return {
             dropvalue:"Select Category",
-            DropDownData: ["Newsletter","Purchases","Downloads","Team Account"],
+            DropDownData: ["Select Category","Newsletter","Purchases","Downloads","Team Account"],
         };
     },
     methods:{
