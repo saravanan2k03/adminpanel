@@ -22,8 +22,8 @@ router.route("/api/v1/productcategories").delete(DeleteProductcategories);
 
 //getAllCourse
 router.route("/api/v1/courses").post(InsertCourses);
-router.route("/api/v1/courses/{{courseId}}").get( GetCourseByCourseId);
-router.route("/api/v1/courses/coursecategories/{{coursecategoryId}}").get(GetAllCourses);
+router.route("/api/v1/courses/:courseId").get( GetCourseByCourseId);
+router.route("/api/v1/courses/coursecategories/:course").get(GetAllCourses);
 router.route("/api/v1/courses").put(UpdateCourses);
 router.route("/api/v1/courses").delete(DeleteCourses);
 
