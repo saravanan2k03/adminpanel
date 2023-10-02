@@ -26,6 +26,7 @@ const InsertCoursecategories = async (req, res) => {
       key1: "value1",
       key2: "value2",
     },
+    syllabus:"",
   };
   console.log("DataGetted:");
   console.log(data);
@@ -33,7 +34,7 @@ const InsertCoursecategories = async (req, res) => {
     TableName: "mentorfoxdev",
     Item: data,
   };
-
+  
   DynamoDB.put(params, (err) => {
     if (err) {
       // Handle the error case
