@@ -109,6 +109,7 @@ const UpdateCourses = async(req,res)=>{
     let data = {
         pk: "COURSE#",
         sk: "COURSECATEGORY#"+ courseId,
+        CourseCategory: req.body.CourseCategory,
         GreyCourseTitle: req.body.GreyCourseTitle,
         BlackCourseTitle: req.body.BlackCourseTitle,
         Format:req.body.Format,
@@ -123,7 +124,6 @@ const UpdateCourses = async(req,res)=>{
         Faq:{},
         Active:true,
       };
-
       for (const key in req.body.Wywl) {
         if (req.body.Wywl.hasOwnProperty(key)) {
           data.Wywl[key] = req.body.Wywl[key];

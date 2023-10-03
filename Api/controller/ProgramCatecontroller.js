@@ -1,27 +1,27 @@
 const {DynamoDB,AWSS3} = require("../config/db");
 
 
-const InsertProductcategories = async(req,res)=>{
+const InsertProgramcategories = async(req,res)=>{
     res.status(200).json({msg:'Inserted Productcategories'});
 };
 
 
-const GetProductcategoriesByProductId = async(req,res)=>{
+const GetProgramcategoriesByProgramId = async(req,res)=>{
     res.status(200).json({msg:'Getting Productcategories'});
 };
 
 
-const GetAllProductcategories = async(req,res)=>{
+const GetAllProgramcategories = async(req,res)=>{
     res.status(200).json({msg:'Getting all Productcategories'});
 };
 
-const UpdateProductcategories = async(req,res)=>{
+const UpdateProgramcategories = async(req,res)=>{
     res.status(200).json({msg:'Updating Productcategories'});
 };
 
-const DeleteProductcategories = async(req,res)=>{
+const DeleteProgramcategories = async(req,res)=>{
     res.status(200).json({msg:'Deleting Productcategories'});
 };
 
 
-module.exports={InsertProductcategories, GetProductcategoriesByProductId,GetAllProductcategories,UpdateProductcategories,DeleteProductcategories};
+module.exports={InsertProgramcategories, GetProgramcategoriesByProgramId,GetAllProgramcategories,UpdateProgramcategories,DeleteProgramcategories};
