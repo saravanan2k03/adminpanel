@@ -1,8 +1,8 @@
 var router = require("express").Router();
 const {InsertCoursecategories, GetCoursecategoriesByCourseId,GetAllCoursecategories,UpdateCoursecategories,DeleteCoursecategories} = require("../controller/CourseCatecontroller");
-const {InsertProductcategories, GetProductcategoriesByProductId,GetAllProductcategories,UpdateProductcategories,DeleteProductcategories} = require("../controller/ProductCatecontroller");
+const {InsertProductcategories, GetProductcategoriesByProductId,GetAllProductcategories,UpdateProductcategories,DeleteProductcategories} = require("../controller/ProgramCatecontroller");
 const {InsertCourses, GetCourseByCourseId,GetAllCourses,UpdateCourses,DeleteCourses} = require("../controller/Coursecontroller");
-const {InsertProduct, GetProductByProductId,GetAllProduct,UpdateProduct, DeleteProduct} = require("../controller/Productcontroller");
+const {InsertProduct, GetProductByProductId,GetAllProduct,UpdateProduct, DeleteProduct} = require("../controller/Programcontroller");
 
 //getAllCourseCategories
 router.route("/api/v1/coursecategories").post(InsertCoursecategories);
