@@ -6,16 +6,16 @@ const {InsertProgram, GetProgramByProgramId,GetAllProgram,UpdateProgram, DeleteP
 
 //getAllCourseCategories
 router.route("/api/v1/coursecategories").post(InsertCoursecategories);
-router.route("/api/v1/coursecategories/:courseId").get(GetCoursecategoriesByCourseId);
+router.route("/api/v1/coursecategories/:Coursecategoryid").get(GetCoursecategoriesByCourseId);
 router.route("/api/v1/coursecategories").get(GetAllCoursecategories);
 router.route("/api/v1/coursecategories").put(UpdateCoursecategories);
 router.route("/api/v1/coursecategories").delete(DeleteCoursecategories);
 
 
-//getAllProductCategories
+//getAllProgramCategories
 router.route("/api/v1/productcategories").post(InsertProgramcategories);
-router.route("/api/v1/productcategories/{{productcategoryId}}").get(GetProgramcategoriesByProgramId);
-router.route("/api/v1/productcategories").get(GetAllProgramcategories);
+router.route("/api/v1/productcategories/:Programcategoryid").get(GetProgramcategoriesByProgramId);
+router.route("/api/v1/productcategories/").get(GetAllProgramcategories);
 router.route("/api/v1/productcategories").put(UpdateProgramcategories);
 router.route("/api/v1/productcategories").delete(DeleteProgramcategories);
 
@@ -28,11 +28,11 @@ router.route("/api/v1/courses").put(UpdateCourses);
 router.route("/api/v1/courses").delete(DeleteCourses);
 
 //getAllProduct
-router.route("/api/v1/products").post(InsertProgram);
-router.route("/api/v1/products/{{productId}}").get(GetProgramByProgramId);
-router.route("/api/v1/products/productcategories/{{productcategoryId}}").get(GetAllProgram);
-router.route("/api/v1/products").put(UpdateProgram);
-router.route("/api/v1/products").delete(DeleteProgram);
+router.route("/api/v1/program").post(InsertProgram);
+router.route("/api/v1/program/:programId").get(GetProgramByProgramId);
+router.route("/api/v1/program/productcategories/program").get(GetAllProgram);
+router.route("/api/v1/program").put(UpdateProgram);
+router.route("/api/v1/program").delete(DeleteProgram);
 
 
 
