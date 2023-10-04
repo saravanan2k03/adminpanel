@@ -130,7 +130,7 @@ const DeleteProgramcategories = async(req,res)=>{
       console.error(error);
       res
         .status(500)
-        .json({ error: "An error occurred while Deleting the course category" });
+        .json({ error: "An error occurred while Deleting the Program category" });
     }
   };
 
