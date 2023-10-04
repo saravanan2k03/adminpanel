@@ -54,7 +54,8 @@ const GetProgramcategoriesByProgramId = async(req,res)=>{
     } catch (error) {
       console.error(error);
       res.status(500).json({ error: "An error occurred while retrieving data" });
-    }};
+    }
+  };
 
 
 const GetAllProgramcategories = async(req,res)=>{
@@ -136,3 +137,4 @@ const DeleteProgramcategories = async(req,res)=>{
 
 
 module.exports={InsertProgramcategories, GetProgramcategoriesByProgramId,GetAllProgramcategories,UpdateProgramcategories,DeleteProgramcategories};
+
