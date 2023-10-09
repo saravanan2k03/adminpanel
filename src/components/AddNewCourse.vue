@@ -29,7 +29,6 @@
             <p class="text-2xl text-black font-bold mt-4">FAQ</p>
             <Faq></Faq>
             <div class="h-[10px] w-full mt-2"></div>
-
         </div>
     </div>
 </template>

@@ -1,10 +1,10 @@
 <template>
-    <div class="flex items-stretch justify-between min-h-[9.2%] pt-3 border-b-2 border-gray-300">
-        <div class="h-full min-w-[40%] flex items-center">
-            <p class="text-3lg text-gray-600 ml-4 font-medium">{{ Name }}</p>
+    <div class="flex items-stretch justify-between min-h-[25%] pt-3 border-b-2 border-gray-300">
+        <div class="h-full min-w-[40%] flex items-center text-start">
+            <p class="text-3lg text-gray-600 ml-4 font-medium ">{{ Name }}</p>
         </div>
-        <div class="h-full min-w-[60%] flex items-center justify-between">
-            <p class="text-3lg text-gray-600 ml-7 font-medium min-w-[50%]">{{ ProgramCategory }}</p>
+        <div class="h-full min-w-[60%] flex items-center justify-between ">
+            <p class="text-3lg text-gray-600 ml-7 font-medium min-w-[50%] text-start">{{ ProgramCategory }}</p>
             <div>
                 <div class="flex">
                     <p class="text-3lg text-blue-500  font-medium mr-3">Edit</p>
